@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hotel De Zonne Vallei | Onze kamers</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                HOTEL DE ZONNE VALLEI
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="kamers.html">Kamers</a></li>
+                <li><a href="restaurant.html">Restaurant</a></li>
+                <li><a href="over-ons.html">Over ons</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="rooms-hero">
+            <h1>Onze hotelkamers</h1>
+            <p>Ontdek comfort en ontspanning in Hotel De Zonne Vallei.</p>
+        </section>
+
+        <section class="rooms-section">
+
+            <div class="section-heading">
+                <p class="section-label">ONZE ACCOMMODATIES</p>
+                <h2>Vind de kamer die bij u past</h2>
+                <p>Geniet van een aangenaam verblijf in een van onze kamers.</p>
+            </div>
+
+            <div class="rooms-container" id="rooms-container">
+
+                <article class="room-card">
+                    <div class="room-placeholder">Standaard kamer</div>
+                    <div class="room-content">
+                        <h3>Standaard kamer</h3>
+                        <p>
+                            Een comfortabele kamer met alles wat u nodig
+                            heeft voor een ontspannen verblijf.
+                        </p>
+                        <p class="room-price">Vanaf € 95 per nacht</p>
+                        <a href="#reservation-form" class="btn" data-room="standard" >
+                            Informeer naar beschikbaarheid
+                        </a>
+                    </div>
+                </article>
+
+                <article class="room-card">
+                    <div class="room-placeholder">Deluxe kamer</div>
+                    <div class="room-content">
+                        <h3>Deluxe kamer</h3>
+                        <p>
+                            Geniet van extra ruimte, comfort en een
+                            stijlvolle inrichting.
+                        </p>
+                        <p class="room-price">Vanaf € 125 per nacht</p>
+                        <a href="#reservation-form" class="btn" data-room="deluxe">
+                            Informeer naar beschikbaarheid
+                        </a>
+                    </div>
+                </article>
+
+                <article class="room-card">
+                    <div class="room-placeholder">Suite</div>
+                    <div class="room-content">
+                        <h3>Suite</h3>
+                        <p>
+                            Ervaar luxe en ontspanning in onze ruime
+                            en exclusieve suite.
+                        </p>
+                        <p class="room-price">Vanaf € 175 per nacht</p>
+                        <a href="#reservation-form" class="btn" data-room="suite">
+                            Informeer naar beschikbaarheid
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        
+<section class="reservation-section">
+
+    <div class="section-heading">
+        <p class="section-label">RESERVEER UW VERBLIJF</p>
+        <h2>Boek uw kamer</h2>
+        <p>Vul uw gegevens in om een reserveringsaanvraag te doen.</p>
+    </div>
+
+    <form id="reservation-form">
+
+        <div class="form-group">
+            <label for="room-type">Kamertype</label>
+            <select id="room-type" name="room-type" required>
+                <option value="">Kies een kamer</option>
+                <option value="standard">Standaard kamer</option>
+                <option value="deluxe">Deluxe kamer</option>
+                <option value="suite">Suite</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="check-in">Aankomstdatum</label>
+            <input type="date" id="check-in" name="check-in" required>
+        </div>
+
+        <div class="form-group">
+            <label for="check-out">Vertrekdatum</label>
+            <input type="date" id="check-out" name="check-out" required>
+        </div>
+
+        <div class="form-group">
+            <label for="guests">Aantal gasten</label>
+            <input type="number" id="guests" name="guests"
+                   min="1" max="10" value="2" required>
+        </div>
+
+        <div class="form-group">
+            <label for="guest-name">Naam</label>
+            <input type="text" id="guest-name" name="guest-name"
+                   placeholder="Uw naam" required>
+        </div>
+
+        <div class="form-group">
+            <label for="guest-email">E-mailadres</label>
+            <input type="email" id="guest-email" name="guest-email"
+                   placeholder="Uw e-mailadres" required>
+        </div>
+
+        <button type="submit" class="btn">
+            Reserveringsaanvraag versturen
+        </button>
+
+        <p id="reservation-message"></p>
+
+        <div id="reservation-summary" class="reservation-summary" hidden>
+    <h3>Controleer uw reservering</h3>
+
+    <p><strong>Kamertype:</strong> <span id="summary-room"></span></p>
+    <p><strong>Aankomst:</strong> <span id="summary-check-in"></span></p>
+    <p><strong>Vertrek:</strong> <span id="summary-check-out"></span></p>
+    <p><strong>Aantal gasten:</strong> <span id="summary-guests"></span></p>
+    <p><strong>Naam:</strong> <span id="summary-name"></span></p>
+    <p><strong>E-mailadres:</strong> <span id="summary-email"></span></p>
+</div>
+
+    </form>
+
+</section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Hotel De Zonne Vallei. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

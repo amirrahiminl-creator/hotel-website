@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hotel De Zonne Vallei | Contact</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                HOTEL DE ZONNE VALLEI
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="kamers.html">Kamers</a></li>
+                <li><a href="restaurant.html">Restaurant</a></li>
+                <li><a href="over-ons.html">Over ons</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="contact-hero">
+            <h1>Neem contact met ons op</h1>
+            <p>Wij helpen u graag verder.</p>
+        </section>
+
+        <section class="contact-section">
+
+            <div class="contact-info">
+                <p class="section-label">WE HOREN GRAAG VAN U</p>
+                <h2>Contactgegevens</h2>
+
+                <div class="contact-item">
+                    <h3>Adres</h3>
+                    <p>Hotel De Zonne Vallei</p>
+                    <p>Voorbeeldstraat 10</p>
+                    <p>1234 AB Nederland</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Telefoon</h3>
+                    <p>+31 20 123 4567</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>E-mail</h3>
+                    <p>info@zonnevallei.nl</p>
+                </div>
+
+            </div>
+
+            <div class="contact-form-container">
+
+                <h2>Stuur ons een bericht</h2>
+
+                <form id="contact-form">
+
+                    <div class="form-group">
+                        <label for="name">Naam</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Uw naam"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mailadres</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Uw e-mailadres"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Onderwerp</label>
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="Onderwerp van uw bericht"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Bericht</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            placeholder="Schrijf hier uw bericht..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">
+                        Verstuur bericht
+                    </button>
+
+                    <p id="form-message"></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Hotel De Zonne Vallei. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+@HotelDeZonneVallei.Api_HostAddress = http://localhost:5109
+
+GET {{HotelDeZonneVallei.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
